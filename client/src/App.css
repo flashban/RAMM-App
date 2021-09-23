@@ -1,0 +1,734 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #22254b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.custum_nav {
+  background-color: linear-gradient(to right, #00a4c7, #dee9ff);
+}
+
+.logo {
+  width: 221px;
+  height: 59px;
+  border-radius: 25px;
+  border-color: black;
+  object-fit: cover !important;
+}
+
+.centerImage {
+  width: 348px;
+  height: 294px;
+  border-radius: 186px;
+  border-color: black;
+  object-fit: scale-down;
+  margin: 1rem;
+}
+
+/* Registration page css */
+
+/* .register-form {
+    padding: 100px 0;
+} */
+
+.register-form .form-icon {
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  margin: auto;
+  margin-bottom: 40px;
+  font: normal normal 300 40px/20px Segoe UI;
+}
+
+.register-form .item {
+  border-radius: 3px;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+}
+
+/* .register-form .create-account {
+  border-radius: 8px;
+  padding: 13px 20px;
+  font: normal normal 600 20px/10px Segoe UI;
+  font-weight: 600;
+  width: 169px;
+  height: 41px;
+  background-color: #00A4C7;
+  border: none;
+  color: white;
+  margin-top: 30px;
+  font-weight: 600;
+} */
+
+.register-form .small-btn {
+  border-radius: 8px;
+  padding: 13px 20px;
+  font: normal normal 600 20px/10px Segoe UI;
+  width: 178px;
+  height: 40px;
+  margin: auto;
+  background-color: #00a4c7;
+  border: none;
+  color: white;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.register-form .social-media {
+  max-width: 600px;
+  background-color: #fff;
+  margin: auto;
+  padding: 35px 0;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: #9fadca;
+  border-top: 1px solid #dee9ff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.register-form .social-icons {
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+.register-form .social-icons a {
+  font-size: 23px;
+  margin: 0 3px;
+  color: #5691ff;
+  border: 1px solid;
+  border-radius: 50%;
+  width: 45px;
+  display: inline-block;
+  height: 45px;
+  text-align: center;
+  background-color: #fff;
+  line-height: 45px;
+}
+
+.register-form .social-icons a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+@media (max-width: 576px) {
+  .register-form form {
+    padding: 50px 20px;
+  }
+  .register-form .form-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 70px;
+  }
+}
+
+/* Login Page CSS styling */
+
+.registration-form {
+  padding: 100px 0;
+}
+
+.registration-form form {
+  background-color: #fff;
+  width: 690px;
+  height: 570px;
+  margin: auto;
+  padding: 20px 70px;
+  border-radius: 4px !important;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.register-form form {
+  background: linear-gradient(to right, #732fdf, #bd00ff);
+  width: max-content;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 20px 140px;
+  border-radius: 5px !important;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+/* .custom-login-form {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+} */
+
+.registration-form .form-icon {
+  text-align: center;
+  border-radius: 50%;
+  color: #00a4c7;
+  height: 120px;
+  margin: auto;
+  margin-bottom: 25px;
+  line-height: 100px;
+  font: normal normal 300 50px/100px Segoe UI;
+  margin-top: 10px;
+}
+
+.form-control {
+  margin-bottom: 30px;
+  border: 1px solid #707070;
+  padding: 0.75rem 0.75rem;
+  width: 338px;
+  height: 44px;
+  margin: auto;
+  margin-left: auto;
+  font: normal normal 600 20px/40px Segoe UI;
+  margin-left: 5rem;
+}
+
+.regis-form-control {
+  margin-bottom: 30px;
+  border: 1px solid #707070;
+  padding: 0.75rem 0.75rem;
+  width: 322px;
+  height: 45px;
+  margin: auto;
+  margin-left: auto;
+  margin-left: 3rem;
+  text-transform: lowercase;
+}
+
+.regis-dropdown-control {
+  margin-bottom: 30px;
+  border: 1px solid black;
+  padding: 0.75rem 9.25rem;
+  width: 350px !important;
+  height: 55px;
+  margin: auto;
+  background-color: white;
+  color: #707070;
+  font: normal normal 600 20px/40px Segoe UI;
+  margin-left: 5rem;
+}
+
+.registration-form .item {
+  border-radius: 3px;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+}
+
+.col-form-label {
+  margin-bottom: -40px;
+  line-height: 35px;
+  width: 10%;
+  text-align: right;
+  font: normal normal 600 25px/64px Segoe UI;
+  height: 43px;
+}
+
+.regis-col-form-label {
+  margin-bottom: -40px;
+  line-height: 35px;
+  width: 35%;
+  text-align: -moz-center;
+  font: normal normal 600 14px/64px Segoe UI;
+  height: 43px;
+  margin-left: -90px;
+  color: white;
+  padding-right: 20px;
+}
+
+/* .dropdown-toggle {
+    text-align: right;
+}
+
+.span_dropdown {
+    margin-right: 10rem;
+} */
+
+.registration-form .create-account {
+  border-radius: 8px;
+  font: normal normal 500 25px/45px Segoe UI;
+  width: 380px;
+  height: 66px;
+  margin: auto;
+  background-color: #00a4c7;
+  border: none;
+  color: white;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.registration-form .social-media {
+  max-width: 600px;
+  background-color: #fff;
+  margin: auto;
+  padding: 35px 0;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: #9fadca;
+  border-top: 1px solid #dee9ff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .social-icons {
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+.registration-form .social-icons a {
+  font-size: 23px;
+  margin: 0 3px;
+  color: #5691ff;
+  border: 1px solid;
+  border-radius: 50%;
+  width: 45px;
+  display: inline-block;
+  height: 45px;
+  text-align: center;
+  background-color: #fff;
+  line-height: 45px;
+}
+
+.registration-form .social-icons a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+#hiddenField {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .registration-form form {
+    padding: 50px 20px;
+  }
+  .registration-form .form-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 70px;
+  }
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image:url("../images/home-bg-img.png") no-repeat; */
+  background-size: cover;
+  background-position: center;
+}
+
+.home .image img {
+  width: 40vw;
+  animation: float 3s linear infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-3.5rem);
+  }
+}
+
+.home .content h3 {
+  font-size: 5.5rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.home .content h3 span {
+  color: var(--pink);
+  text-transform: uppercase;
+}
+
+.home .content p {
+  font-size: 1.7rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+:root {
+  --purple: #814096;
+  --pink: #f83292;
+  --gradient: linear-gradient(90deg, var(--purple), var(--pink));
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+
+*::selection {
+  background: var(--pink);
+  color: #fff;
+}
+
+html {
+  font-size: 85%;
+  overflow-x: hidden;
+}
+
+/* body {
+  background: #f9f9f9;
+} */
+
+section {
+  min-height: 100vh;
+  padding: 0 9%;
+  padding-top: 7.5rem;
+  padding-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 3rem;
+  border-radius: 5rem;
+  background: var(--gradient);
+  font-size: 1.7rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.heading {
+  text-align: center;
+  background: var(--gradient);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+/* Tools Page css */
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  margin: 50px auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 200;
+  margin: 0;
+}
+
+h1 span {
+  font-weight: 600;
+}
+
+p {
+  color: hsl(6%, 66%);
+  font-size: medium;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.scroll-table {
+  width: 100%;
+  height: 500px;
+  overflow: auto;
+}
+
+.box {
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  margin: 15px;
+  width: 320px;
+  cursor: pointer;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+}
+
+.box-red::after {
+  background-color: hsl(0, 78%, 62%);
+}
+
+.box-cyan::after {
+  background-color: hsl(180, 62%, 55%);
+}
+
+.box-orange::after {
+  background-color: hsl(34, 97%, 64%);
+}
+
+.box-blue::after {
+  background-color: hsl(212, 86%, 64%);
+}
+
+.box-push {
+  transform: translateY(50%);
+}
+
+.box h2 {
+  margin: 0;
+}
+
+.box p {
+  font-size: 14px;
+  margin: 15px 0 40px;
+}
+
+.box img {
+  display: block;
+  margin-left: auto;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (max-width: 775px) {
+  .box-push {
+    transform: translateY(0);
+  }
+}
+
+/* patients details page */
+
+.dropdown-menu-right {
+  float: left;
+  left: 0;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #00a4c7;
+  border-radius: 6px;
+  height: 72px;
+  width: auto;
+  font: normal normal normal 32px/38px Yu Gothic UI;
+  color: #6a6a6a;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+.dropdown-item:active,
+.dropdown-item:hover {
+  color: #16181b !important;
+  background: none !important;
+}
+
+.dropdown-menu-right {
+  right: 22px;
+}
+
+.form-check-input {
+  width: 20px;
+  height: 20px;
+}
+.printIcon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.table {
+  width: 90%;
+  margin-left: 35px;
+}
+
+/* styling for resource allocation page */
+
+section {
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 30% 70%;
+  grid-gap: 15px;
+  padding:5px;
+}
+
+.block {
+  border-radius: 15px;
+  box-shadow: 0 10px 25px -10px rgba(33, 150, 243, 0.5);
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.block .numbers {
+  font-size: 3rem;
+}
+
+.block .label {
+  font-size: 1.2rem;
+  padding: 15px 0 0 0;
+  color: #424242;
+}
+
+.total-cases {
+  color: #2196f3;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.active-cases {
+  color: #ffc107;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.death-cases {
+  color: #f44336;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.recovered-cases {
+  color: #4caf50;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.news {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  background: #fff;
+  box-shadow: 0 10px 25px -10px rgba(33, 150, 243, 0.5);
+  border-radius: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news .card {
+  width: 35%;
+  background: #e5eff8;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  border-radius: 15px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.card .headline,
+.summary {
+  padding: 10px 15px;
+
+  font-size: 1.5rem;
+}
+
+.summary {
+  font-size: 1rem;
+  color: #424242;
+}
+
+.read-more button {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 0 0 15px 15px;
+  background: #2196f3;
+  color: #fff;
+  transition: 0.3s;
+  outline: none;
+}
+
+.read-more button:hover {
+  background: #ffc107;
+  color: #000;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9e999e;
+}
