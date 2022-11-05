@@ -24,6 +24,10 @@ const ToolSearch = () => {
     history.push("/workflow");
   };
 
+  const learning = () => {
+    history.push("/learning");
+  };
+
   return (
     <>
       <header>
@@ -34,7 +38,7 @@ const ToolSearch = () => {
         </p>
       </header>
       <div className="container">
-        <div className="box box-cyan box-push" onClick={onSubmit}>
+        <div className="box box-cyan" onClick={onSubmit}>
           <h2>Patient details</h2>
           <p>Monitors the health conditions of the indivisual patient</p>
           <img src={Supervisor} alt="supervisor" />
@@ -47,7 +51,7 @@ const ToolSearch = () => {
           </p>
           <img src={Builder} alt="supervisor" />
         </div>
-        <div className="box box-blue box-push" onClick={medicalHistory}>
+        <div className="box box-blue" onClick={medicalHistory}>
           <h2>Health Records</h2>
           <p>
             Uses data from past medical history to provide better delivery
@@ -59,6 +63,11 @@ const ToolSearch = () => {
           <h2>Prediction Status</h2>
           <p>Regularly evaluates our talent to ensure quality</p>
           <img src={Karma} alt="Status" />
+        </div>
+        <div className="box box-green" onClick={learning}>
+          <h2>Learning</h2>
+          <p>Regularly evaluates our talent to ensure quality</p>
+          <img src={Karma} alt="Learning and Development"/>
         </div>
       </div>
     </>

@@ -17,6 +17,7 @@ import HospitalDetails from "./components/HospitalDetails";
 import MedHis from "./components/MedHis";
 import WorkFlow from "./components/WorkFlow";
 import Allocate from "./components/AllocateResource";
+import Learning from "./components/Learning";
 
 export const UserContext = createContext();
 
@@ -67,6 +68,10 @@ const Routing = () => {
         <WorkFlow></WorkFlow>
       </Route>
 
+      <Route path="/learning">
+        <Learning></Learning>
+      </Route>
+      
       <Route path="/allocate">
         <Allocate></Allocate>
       </Route>

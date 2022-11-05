@@ -536,6 +536,10 @@ p {
   background-color: hsl(212, 86%, 64%);
 }
 
+.box-green::after {
+  background-color: hsl(115, 82%, 48%);
+}
+
 .box-push {
   transform: translateY(50%);
 }
