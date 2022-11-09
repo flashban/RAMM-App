@@ -39,7 +39,15 @@ const Learning = () => {
     <>
       <section className="home" id="home">
         <div className="content">
-          
+          <div className="video-titlebar">
+            <p>Video Tutorials</p>
+            <input
+                placeholder="Search video"
+              />
+          </div>
+          <div className="video-container">
+            Hello
+          </div>
         </div>
       </section>
     </>
