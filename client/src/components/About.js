@@ -51,7 +51,7 @@ const About = () => {
           </h3>
           <p>Rapid Action Management Module</p>
           <a href="#" className="btn" onClick={download}>
-            download now
+            get started
           </a>
         </div>
         <div className="image">

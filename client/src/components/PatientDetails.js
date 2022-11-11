@@ -127,17 +127,17 @@ function PatientDetails() {
         </table>
       </div>
       <button
-            className="btn"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            style={{transform: 'translateX(100px)'}}
-            onClick={sharedetails}
-          >
-            <img src={PrintIcon} className="printIcon" alt="printIcon" /> Share
-          </button>
+        className="btn"
+        type="button"
+        id="dropdownMenuButton"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+        style={{ transform: 'translateX(100px)' }}
+        onClick={sharedetails}
+      >
+        <img src={PrintIcon} className="printIcon" alt="printIcon" /> Share
+      </button>
     </>
   );
 }

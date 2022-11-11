@@ -17,7 +17,7 @@ import HospitalDetails from "./components/HospitalDetails";
 import MedHis from "./components/MedHis";
 import WorkFlow from "./components/WorkFlow";
 import Allocate from "./components/AllocateResource";
-import Learning from "./components/Learning";
+import Learning from "./components/Learning/Learning";
 
 export const UserContext = createContext();
 
