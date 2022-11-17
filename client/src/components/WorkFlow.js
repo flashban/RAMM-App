@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
+
 
 const WorkFlow = () => {
   const history = useHistory();
   const allocateResourse = () => {
     history.push("/allocate");
   };
+  // useEffect(() => {
+  //   Math.random() * (5 - 1) + 1;
+  // }, []);
   return (
     <>
       <header>
@@ -28,13 +32,6 @@ const WorkFlow = () => {
             <b>Contact :</b> 9904561245
             <br></br>
             <b>Readmission Prediction :</b> Positive
-            {/* <input
-              className="styled-checkbox"
-              id="styled-checkbox-1"
-              type="checkbox"
-              defaultValue="value1"
-            />
-            <label htmlFor="styled-checkbox-1">Select</label> */}
             <br></br>
             <button
               className="btn"
@@ -50,7 +47,7 @@ const WorkFlow = () => {
           </p>
         </div>
 
-        <div className="box box-orange">
+        {/* <div className="box box-orange">
           <h2>Patient Status</h2>
           <p>
             <b>Patient Name :</b> kamla
@@ -66,13 +63,6 @@ const WorkFlow = () => {
             <b>Contact :</b> 9904561245
             <br></br>
             <b>Readmission Prediction :</b> negative
-            {/* <input
-              className="styled-checkbox"
-              id="styled-checkbox-1"
-              type="checkbox"
-              defaultValue="value1"
-            />
-            <label htmlFor="styled-checkbox-1">Select</label> */}
             <br></br>
             <button
               className="btn"
@@ -86,7 +76,7 @@ const WorkFlow = () => {
               proceed
             </button>
           </p>
-        </div>
+        </div> */}
       </div>
     </>
   );

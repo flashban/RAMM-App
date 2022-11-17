@@ -9,7 +9,6 @@ function HospitalDetails() {
   const callMedicals = async () => {
     try {
       const res = await fetchData();
-      console.log("Here is Hospital data", res.hospitalData);
       setMedico(res.hospitalData);
     } catch (err) {
       console.log(err);

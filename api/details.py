@@ -1,7 +1,7 @@
 import string
 import random
 import pandas as pd
-
+import json
 
 N = 4
 card = 10
@@ -24,4 +24,13 @@ for x in range(card):
     print(main_list)
     df1 = df1.append(pd.DataFrame([main_list] , columns=['Doctor ID', 'Nurse ID', 'Room allocated']))
 
-out = df1.to_json(orient='records')[1:-1].replace('},{', '} {')
+d = df1.to_dict(orient='records')
+j = json.dumps(d)
+#print(j)
+
+f = open("final.json", "a")
+f.write(j)
+f.close()
+
+
+

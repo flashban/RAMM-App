@@ -1,13 +1,25 @@
 import React, { useEffect, useState } from "react";
-import Logopic1 from "../../images/logo_1.png";
+import { useHistory } from "react-router-dom";
+import { linksYtube } from "../../api/ytube";
 import "./learning.css"
 
 const Learning = () => {
   const [videoInput, setVideoInput] = useState('');
+  const [vid, setVid] = useState([]);
+  const history = useHistory();
+
+  const callYtube = async () => {
+    setVid(linksYtube);
+  };
 
   const searchVideo = () => {
     alert(videoInput)
   };
+
+  useEffect(() => {
+    callYtube();
+  }, []);
+
   return (
     <>
       <header>
@@ -19,7 +31,7 @@ const Learning = () => {
             <ul className="navbar-nav ml-auto">
               <form className="d-flex">
                 <input
-                  className="form-control me-2"
+                  className="form-control me-2 search"
                   aria-label="Search"
                   type="video"
                   id="videoInput"
@@ -46,12 +58,17 @@ const Learning = () => {
         </div>
       </nav>
       <div className="container">
-        <div className="box box-green">
-          <img src={Logopic1} alt="RAMM" className="thumbnail" />
-          <br />
-          <h4>Title : </h4>
-          <h5>Description : </h5>
-        </div>
+        {vid.map((e) => {
+          return (
+            <div className="box box-green">
+              <img src={e.thumbnail} alt="RAMM" className="thumbnail" />
+              <br />
+              <h4>Title : {e.Title}</h4>
+              <h5 className="dexc">Description : {e.Description}</h5>
+            </div>
+          );
+        })}
+        
       </div>
     </>
   );

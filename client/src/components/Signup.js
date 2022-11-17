@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 
 const Signup = () => {
   const history = useHistory();
+  const MySwal = withReactContent(Swal);
   const [user, setUser] = useState({
     name: "",
     email: "",
@@ -43,9 +46,9 @@ const Signup = () => {
     const data = await res.json();
 
     if (res.status === 422 || !data) {
-      window.alert("Invalid registration");
+      MySwal.fire("Invalid registration");
     } else {
-      window.alert("Registration Successfull!");
+      MySwal.fire("Registration Successfull!");
       history.push("/login");
     }
   };
@@ -143,7 +146,7 @@ const Signup = () => {
           </div>
           <div className="form-group row">
             <label htmlFor="inputcpassword" className="regis-col-form-label">
-              Confirm Password
+              Confirm Again
             </label>
             <div className="col-sm-12">
               <input

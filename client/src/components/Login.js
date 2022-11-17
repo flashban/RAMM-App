@@ -1,6 +1,8 @@
 import React, { useState, useContext } from "react";
 import Logopic2 from "../images/logo_1.png";
 import { useHistory } from "react-router-dom";
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 
 import {UserContext} from "../App";
 
@@ -8,6 +10,7 @@ const Login = () => {
 
   const {state, dispatch} = useContext(UserContext);
   const history = useHistory();
+  const MySwal = withReactContent(Swal);
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -29,7 +32,7 @@ const Login = () => {
     const data = res.json();
 
     if (res.status === 400 || !data) {
-      window.alert("Invalid Credentials");
+      MySwal.fire("Invalid Credentials");
     } else {
       dispatch({type:"USER",payload:true})
       // window.alert("logged In Successfull!");
