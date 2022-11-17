@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import Supervisor from "../images/icon-supervisor.svg";
 import Calculator from "../images/icon-calculator.svg";
 import Karma from "../images/icon-karma.svg";
+import Predict from "../images/predictionStatus.png";
 import Builder from "../images/icon-team-builder.svg";
 
 const ToolSearch = () => {
@@ -62,7 +63,7 @@ const ToolSearch = () => {
         <div className="box box-orange" onClick={planwork}>
           <h2>Prediction Status</h2>
           <p>Regularly evaluates our talent to ensure quality</p>
-          <img src={Karma} alt="Status" />
+          <img className="predict" src={Predict} alt="Status" />
         </div>
         <div className="box box-green" onClick={learning}>
           <h2>Learning</h2>

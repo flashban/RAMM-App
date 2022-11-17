@@ -736,3 +736,9 @@ section {
 ::-webkit-scrollbar-thumb {
   background: #9e999e;
 }
+
+.predict {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
