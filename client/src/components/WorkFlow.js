@@ -7,9 +7,9 @@ const WorkFlow = () => {
   const allocateResourse = () => {
     history.push("/allocate");
   };
-  // useEffect(() => {
-  //   Math.random() * (5 - 1) + 1;
-  // }, []);
+  useEffect(() => {
+    console.log(Math.round(Math.random() * (5 - 1) + 1));
+  }, []);
   return (
     <>
       <header>
@@ -47,7 +47,7 @@ const WorkFlow = () => {
           </p>
         </div>
 
-        {/* <div className="box box-orange">
+        <div className="box box-orange">
           <h2>Patient Status</h2>
           <p>
             <b>Patient Name :</b> kamla
@@ -76,7 +76,8 @@ const WorkFlow = () => {
               proceed
             </button>
           </p>
-        </div> */}
+        </div>
+
       </div>
     </>
   );

@@ -46,9 +46,18 @@ const Signup = () => {
     const data = await res.json();
 
     if (res.status === 422 || !data) {
-      MySwal.fire("Invalid registration");
+      MySwal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Something went wrong!',
+        timer: 3000
+      });
     } else {
-      MySwal.fire("Registration Successfull!");
+      MySwal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: "Registration Successfull!",
+      });
       history.push("/login");
     }
   };

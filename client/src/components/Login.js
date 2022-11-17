@@ -32,11 +32,14 @@ const Login = () => {
     const data = res.json();
 
     if (res.status === 400 || !data) {
-      MySwal.fire("Invalid Credentials");
+      MySwal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: "Invalid Credentials",
+      });
     } else {
       dispatch({type:"USER",payload:true})
-      // window.alert("logged In Successfull!");
-      history.push("/about");
+      history.push("/tool");
     }
 
   }

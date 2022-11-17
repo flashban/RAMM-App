@@ -135,11 +135,11 @@ const AllocateResource = () => {
                 <div className="box box-cyan">
                   <h2>Set 2</h2>
                   <p>
-                    <b>Doctor Name :</b> Harshvardhan
+                    <b>Doctor Name :</b> Naveen Prasad
                     <br></br>
-                    <b>Nurses :</b> Sudha, Manish
+                    <b>Nurses :</b> Manish, Aruna
                     <br></br>
-                    <b>Allocated room :</b>'B' floor 9904
+                    <b>Allocated room :</b>'A' floor 3302
                   </p>
                   <p style={{ transform: "translateX(20px)" }}>
                     <input
@@ -154,11 +154,11 @@ const AllocateResource = () => {
                 <div className="box box-cyan">
                   <h2>Set 3</h2>
                   <p>
-                    <b>Doctor Name :</b> Harshvardhan
+                    <b>Doctor Name :</b> Jack Timothy
                     <br></br>
-                    <b>Nurses :</b> Sudha, Manish
+                    <b>Nurses :</b> Kashyup, Hira 
                     <br></br>
-                    <b>Allocated room :</b>'B' floor 9904
+                    <b>Allocated room :</b>'C' floor 4589
                   </p>
                   <p style={{ transform: "translateX(20px)" }}>
                     <input
@@ -175,47 +175,9 @@ const AllocateResource = () => {
                   <p>
                     <b>Doctor Name :</b> Harshvardhan
                     <br></br>
-                    <b>Nurses :</b> Sudha, Manish
+                    <b>Nurses :</b> Geeta, Shivam
                     <br></br>
-                    <b>Allocated room :</b>'B' floor 9904
-                  </p>
-                  <p style={{ transform: "translateX(20px)" }}>
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      defaultValue
-                      id="flexCheckDefault"
-                    />
-                  </p>
-                </div>
-
-                <div className="box box-cyan">
-                  <h2>Set 5</h2>
-                  <p>
-                    <b>Doctor Name :</b> Harshvardhan
-                    <br></br>
-                    <b>Nurses :</b> Sudha, Manish
-                    <br></br>
-                    <b>Allocated room :</b>'B' floor 9904
-                  </p>
-                  <p style={{ transform: "translateX(20px)" }}>
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      defaultValue
-                      id="flexCheckDefault"
-                    />
-                  </p>
-                </div>
-
-                <div className="box box-cyan">
-                  <h2>Set 6</h2>
-                  <p>
-                    <b>Doctor Name :</b> Harshvardhan
-                    <br></br>
-                    <b>Nurses :</b> Sudha, Manish
-                    <br></br>
-                    <b>Allocated room :</b>'B' floor 9904
+                    <b>Allocated room :</b>'B' floor 7845
                   </p>
                   <p style={{ transform: "translateX(20px)" }}>
                     <input

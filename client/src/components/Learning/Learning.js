@@ -16,6 +16,10 @@ const Learning = () => {
     alert(videoInput)
   };
 
+  const handleClick = (myLink) => () => {
+    window.location.href=myLink;
+  }
+
   useEffect(() => {
     callYtube();
   }, []);
@@ -60,7 +64,7 @@ const Learning = () => {
       <div className="container">
         {vid.map((e) => {
           return (
-            <div className="box box-green">
+            <div className="box box-green" onClick={handleClick(e.Video_link)}>
               <img src={e.thumbnail} alt="RAMM" className="thumbnail" />
               <br />
               <h4>Title : {e.Title}</h4>
