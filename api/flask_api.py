@@ -38,3 +38,19 @@ def query():
     except: 
         pass
     return jsonify(data)
+
+
+@app.route('/getdata' , methods = ['POST'])
+def get_data():
+    try:
+        if(request.method == 'GET'):
+            print(os.getcwd())
+            os.chdir(main_path + '/scripts')
+            os.system(f"python rand_details.py")
+            f = open('final.json')
+            data = json.load(f)
+            f.close()
+            os.chdir(main_path)
+    except: 
+        pass
+    return jsonify(data)
