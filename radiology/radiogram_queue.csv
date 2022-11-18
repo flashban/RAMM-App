@@ -1,0 +1,9 @@
+Type,Diagnosis,Priority
+MRI,Organ imaging,10
+CT Scan,Bone imaging,9
+Digital Radiography,Digital x-rays,8
+Angiography,Blood vessels and tissue imaging,7
+Cone beam computed tomography,"ENT , orthopedics",6
+Dental Radiography,Dental structure and bone cavity imaging,5
+Anthrogram,joint imaging,4
+Bone scan,Tracks bone diseases,3
