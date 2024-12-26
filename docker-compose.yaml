@@ -1,0 +1,29 @@
+version: '3'
+services:
+  client:
+    build: ./client
+    container_name: ramm-ui
+    ports:
+      - "3003:3003"
+    stdin_open: true
+    tty: true
+    # volumes:
+    #   - ./client:/app
+    networks:
+      - ramm-network
+    restart: always  # This will restart the container if it stops or fails
+
+  server:
+    build: ./server
+    container_name: ramm-node
+    ports:
+      - "6001:3008"
+    volumes:
+      - ./server:/app
+    networks:
+      - ramm-network
+    restart: always  # This will restart the container if it stops or fails
+
+networks:
+  ramm-network:
+    driver: bridge

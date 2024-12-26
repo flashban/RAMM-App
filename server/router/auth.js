@@ -16,7 +16,7 @@ router.use(cookies());
 //   next();
 // };
 router.get("/", (req, res) => {
-  res.send(`Hello world`);
+  res.send(`Hello from node server`);
 });
 //  Using Promises
 // router.post('/register', async(req, res) => {
